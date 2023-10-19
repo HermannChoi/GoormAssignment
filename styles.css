@@ -1,0 +1,160 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut 3s ease-in forwards;
+    z-index: 2;
+  }
+
+  .first-netflix {
+    width: 100px;
+    animation: bigger 3s ease-in;
+  }
+
+  @keyframes bigger {
+    0% {
+        width: 100px;
+    }
+    100% {
+        width: 8000px;
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
+.logo {
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+
+}
+
+.netflixLogo {
+    width: 150px;
+    float: left;
+    margin: 10px 30px;
+    cursor: pointer;
+}
+
+.IDlogo {
+    width: 50px;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
+
+header {
+    height: 450px;
+}
+
+.headerContainer {
+    position: relative;
+    margin-left: 30px;
+    z-index: 1;
+}
+
+.MHimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.MH {
+    font-weight: bold;
+    font-size: 55px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button {
+    background-color: rgba(50, 50, 50, 0.5);
+    width: 100px;
+    height: 35px;
+    border-radius: 2px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s, width 0.4s;
+}
+
+.button:hover {
+    background-color: rgba(50, 50, 50, 0.7);
+    width: 105px;
+}
+
+.letter {
+    opacity: 1;
+}
+
+.expl {
+    width: 400px;
+    height: 70px;
+}
+
+.NO {
+    width: 100%;
+    height: 650px;
+    background-color: black;
+    box-shadow: 0px -30px 10px black;
+}
+
+.NetOri {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.movies {
+    display: flex;
+    width: 100%;
+    height: 250px;
+}
+
+.NOimgs {
+    margin: 20px;
+    width: 150px;
+    height: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, width 0.5s, height 0.5s;
+}
+
+.NOimgs:hover {
+    box-shadow: 0 0 5px 3px white;
+    width: 200px;
+    height: 296px;
+    z-index: 2;
+}
